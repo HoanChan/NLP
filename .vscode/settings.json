@@ -1,0 +1,6 @@
+{
+    "notebook.output.scrolling": true,
+    "notebook.diff.ignoreOutputs": true,
+    "notebook.output.textLineLimit": 10,
+    "jupyter.themeMatplotlibPlots": true
+}
