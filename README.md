@@ -2,15 +2,6 @@
 
 Giảng viên: TS. Hoàng Thanh Tùng - 1990
 
-conda install pytorch torchtext torchvision -c pytorch
-
-conda install -c pytorch pytorch-cuda
-
-conda install -c anaconda tensorflow
-
-conda install -c anaconda tensorflow-gpu
-
-
 Các bước thực hiện
 
 Bước 1: Xác định phiên bản CUDA và cuDNN phù hợp với phiên bản Tensorflow: https://www.tensorflow.org/install/source#gpu.  
@@ -27,18 +18,6 @@ CuDNN là thư viện hỗ trợ Deep Learning trên GPU, việc cài đặt cuD
 Với CUDA 11.2 thì copy các file vào C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
 https://developer.nvidia.com/rdp/cudnn-download
 
-Bước 5: cài đặt `package tensorflow-gpu conda install -c anaconda tensorflow-gpu` | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
+Bước 5: cài đặt `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
 
 Bước 6: kiểm tra tensorflow-gpu có nhận GPU không?
-
-có vài function để test trong python
-
-``` python
-import tensorflow as tf
-tf.test.is_built_with_cuda()
-```
-hoặc
-``` python
-import tensorflow as tf
-tf.config.list_physical_devices('GPU')
-```
